@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Deepseek Enhanced HTML5 Content & Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        video, audio {
+            width: 100%;
+            margin: 15px 0;
+        }
+        .inline-label {
+            display: inline;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enhanced HTML5 Content & Form Demonstration</h1>
+        <p>This page showcases advanced HTML5 elements including lists, tables, media, and a fully-featured form with native validation.</p>
+    </header>
+
+    <section id="lists">
+        <h2>Top 3 Benefits of HTML5</h2>
+        
+        <h3>Unordered List (Features)</h3>
+        <ul>
+            <li>Native Multimedia Support</li>
+            <li>Better forms with:
+                <ul>
+                    <li>Proper labeling</li>
+                    <li>Fieldset groupings</li>
+                </ul>
+            </li>
+            <li>Native validation</li>
+        </ul>
+        
+        <h3>Activities to do with the form</h3>
+        <ol type="i">
+            <li>Filling in your information</li>
+            <li>Submitting the form</li>
+            <li>Wait for confirmation</li>
+        </ol>
+        
+        <h3>Description List (Terminology)</h3>
+        <dl>
+            <dt>HTML5</dt>
+            <dd>The latest version of HyperText Markup Language</dd>
+            
+            <dt>Semantic Elements</dt>
+            <dd>Elements that clearly describe their meaning to browsers and developers</dd>
+            
+            <dt>Native Validation</dt>
+            <dd>Form validation performed by the browser without JavaScript</dd>
+        </dl>
+    </section>
+
+    <section id="tables">
+        <h2>HTML5 Tables</h2>
+        
+        <h3>HTML5 Element Comparison Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Purpose</th>
+                    <th>Semantic</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td>Generic container</td>
+                    <td>no</td>
+                </tr>
+                <tr>
+                    <td>&lt;Section&gt;</td>
+                    <td>Represents a thematic group of content</td>
+                    <td>yes</td>
+                </tr>
+                <tr>
+                    <td>&lt;Article&gt;</td>
+                    <td>Sel contained unit</td>
+                    <td>yes</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="media">
+        <h2>HTML5 Media</h2>
+        <h2>Below is an image, video and audio demo of HTML5 media capabilities.</h2>
+
+        <h3>Image with caption</h3>
+        <figure>
+            <img src="videos.audios/IMAG 17.jpg" alt="HTML5 sample image" width="400" height="300">
+            <figcaption>Figure 1: an image of an animated character</figcaption>
+        </figure>
+
+        <h3>Video Example</h3>
+        <video src="videos.audios/b3842e27dc76f491bab142c2647675ee.mp4" type="video/mp4" alt="Sample HTML5 video" width="100px" height="300px"  controls ></video>
+        Your browser does not support the video tag.
+        </video>
+        
+        <h3>Audio Example</h3>
+        <audio controls>
+            <source src="videos.audios/Backbencher.m4a" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section id="form">
+        <h2>HTML5 Form with Native Validation</h2>
+        
+        <form id="registration" novalidate>
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="title">Title</label>
+                <select id="title" name="title">
+                    <option value="">Please select</option>
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="ms">Ms.</option>
+                    <option value="dr">Dr.</option>
+                </select>
+                
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" required
+                       placeholder="Enter your first name" autocomplete="first-name">
+                
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="last-name" required 
+                       placeholder="Enter your last name" autocomplete="last-name">
+                
+                <label for="dob">Date of Birth*</label>
+                <input type="date" id="dob" name="dob" required max="2007-8-31">
+                
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required placeholder="ian.email@example.com" 
+                       autocomplete="email">
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder=" eg 0712345678" 
+                       pattern="[0-9]{10}" autocomplete="tel">
+
+                <label for="cv">cv</label>
+                <input type="file" name="cv" id="cv" accept=".pdf, .docx">
+
+                <label for="county">Security Question*</label>
+                <select id="county" name="county" required>
+                    <option value="">Select your county</option>
+                    <option value="Nairobi">Nairobi</option>
+                    <option value="Kisumu">Kisumu</option>
+                    <option value="Machakos">Machakos</option>
+                    <option value="Bungoma">Bungoma</option>
+                </select>
+            </fieldset>
+                
+            <fieldset>
+                <legend>Communication Preferences</legend>
+                <div>
+                    <input type="checkbox" id="email-comm" name="communication" value="email" checked>
+                    <label for="email-comm" class="inline-label">Email</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sms-comm" name="communication" value="sms">
+                    <label for="sms-comm" class="inline-label">SMS/Text</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="phone-comm" name="communication" value="phone">
+                    <label for="phone-comm" class="inline-label">Phone</label>
+                </div>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                
+                <label for="bio"> Bio</label>
+                <textarea id="bio" name="bio" rows="4" maxlength="500" 
+                          placeholder="Tell us a little about yourself (max 500 characters)"></textarea>
+                
+               </fieldset>
+
+               <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="newsletter">Subscribe to newsletter?</label>
+        <input type="checkbox" id="newsletter" name="newsletter" />
+
+        <label for="signup-date">Sign-up Date</label>
+        <input type="date" id="signup-date" name="signup-date" readonly value="2025-08-08" />
+      </fieldset>
+      <button type="submit" class="submit-button">Submit Form</button>
+
+    <footer>
+        <p>© 2023 Ian Marugaa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
